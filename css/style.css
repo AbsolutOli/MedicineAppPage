@@ -499,6 +499,12 @@ body {
 .block-text .block-text__text:not(:last-child) {
   margin: 0 0 24px 0;
 }
+.block-text_centr {
+  max-width: 769px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .video-get-started {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -800,4 +806,171 @@ body {
   line-height: 120%;
   letter-spacing: 4.07px;
   font-weight: 700;
+}
+
+.healthcare {
+  padding: 80px 0 70px 0;
+}
+@media (max-width: 480px) {
+  .healthcare {
+    padding: 40px 0 30px 0;
+  }
+}
+.healthcare .healthcare__block-text {
+  margin-bottom: 58px;
+}
+@media (max-width: 480px) {
+  .healthcare .healthcare__block-text {
+    margin-bottom: 29px;
+  }
+}
+.healthcare .healthcare__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .healthcare .healthcare__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.healthcare .healthcare__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 0 36px;
+  position: relative;
+}
+@media (max-width: 1088px) {
+  .healthcare .healthcare__column {
+    padding: 0 18px;
+  }
+  .healthcare .healthcare__column:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+.healthcare .healthcare__column_1::before, .healthcare .healthcare__column_1::after {
+  content: "";
+  background: #EC5863;
+  position: absolute;
+}
+.healthcare .healthcare__column_1::before {
+  width: 65.752px;
+  height: 65.752px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  border-radius: 16px;
+  left: 10px;
+  bottom: -32px;
+}
+.healthcare .healthcare__column_1::after {
+  width: 96.956px;
+  height: 96.956px;
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+  border-radius: 30px;
+  right: -15px;
+  top: 40px;
+}
+.healthcare .healthcare__column_2::after {
+  content: "";
+  background: #EC5863;
+  position: absolute;
+  border-radius: 30px;
+  width: 127.467px;
+  height: 127.467px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  bottom: -25px;
+  right: -40px;
+}
+.healthcare .healthcare__column_3::after {
+  content: "";
+  background: #EC5863;
+  position: absolute;
+  border-radius: 16px;
+  width: 65.752px;
+  height: 65.752px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  top: -33px;
+  right: 17px;
+}
+@media (max-width: 991.98px) {
+  .healthcare .healthcare__column_3::after {
+    left: 0px;
+    top: 60px;
+  }
+}
+
+.item-healthcare {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 18px 0px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px 0px rgba(88, 126, 236, 0.18);
+  padding: 37px 18px;
+  text-align: center;
+}
+.item-healthcare .item-healthcare__icon {
+  margin: 0 0 58px 0;
+}
+.item-healthcare .item-healthcare__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 138.5%;
+  letter-spacing: 1.28px;
+  margin: 0 0 4px 0;
+}
+.item-healthcare .item-healthcare__text {
+  color: #616161;
+  font-weight: 400;
+  line-height: 138.5%;
+  letter-spacing: 0.96px;
+  text-align: center;
+}
+
+.footer {
+  padding: 0 0 40px 0;
+}
+@media (max-width: 480px) {
+  .footer {
+    padding: 0 0 20px 0;
+  }
+}
+.footer .footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 57px;
+     -moz-column-gap: 57px;
+          column-gap: 57px;
+  row-gap: 15px;
+}
+@media (max-width: 480px) {
+  .footer .footer__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
